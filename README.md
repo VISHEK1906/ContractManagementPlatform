@@ -41,31 +41,31 @@ A production-ready full-stack Contract Management Platform that enables organiza
 *   MySQL Server
 
 ### 2. Quick Start
-1. **Configure Environment Variables**
-    * Navigate to the backend directory.
-    * Create a .env file in the root of the backend folder.
-    * Add the following environment variables to the .env file:
-        ```bash
-        DB_NAME=
-        DB_USER=
-        DB_PASSWORD=
-        DB_HOST=
-        DB_PORT=
-        SECRET_KEY=
-        DEBUG=
-        ALLOWED_HOSTS=
-        ```
-    * The values for DB_NAME, DB_HOST, DB_PORT, and SECRET_KEY should be taken from the project’s settings.py file.
-    * Update DB_USER and DB_PASSWORD with your MySQL database credentials.
-    * Set DEBUG=True for development and DEBUG=False for production.
-    * Provide allowed domains or IPs in ALLOWED_HOSTS (comma-separated).
-    *   Initialize Database (if not already done):
-        ```bash
-        cd backend
-        python init_db_compat.py
-        python manage.py migrate --fake-initial
-        cd ..
-        ```
+1. **Configure Environment Variables**:
+*   Navigate to the backend directory.
+*   Create a .env file in the root of the backend folder.
+*   Add the following environment variables to the .env file:
+    ```bash
+    DB_NAME=
+    DB_USER=
+    DB_PASSWORD=
+    DB_HOST=
+    DB_PORT=
+    SECRET_KEY=
+    DEBUG=
+    ALLOWED_HOSTS=
+    ```
+*   The values for DB_NAME, DB_HOST, DB_PORT, and SECRET_KEY should be taken from the project’s settings.py file.
+*   Update DB_USER and DB_PASSWORD with your MySQL database credentials.
+*   Set DEBUG=True for development and DEBUG=False for production.
+*   Provide allowed domains or IPs in ALLOWED_HOSTS (comma-separated).
+*   Initialize Database (if not already done):
+     ```bash
+     cd backend
+     python init_db_compat.py
+     python manage.py migrate --fake-initial
+     cd ..
+     ```
 
 2.  **Run the Application**:
     Simply execute the run script from the root directory:
